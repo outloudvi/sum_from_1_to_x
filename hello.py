@@ -32,7 +32,7 @@ def sum_from_one_to_x(sum_all):
     if sum_all <= 0:  # Number check
         raise NotImplementedError(
             _("You need to input an integer larger than zero"))
-    return int(sum_all * (sum_all + 1) / 2)  # Algorithm
+    return int(sum_all * (sum_all + 1) >> 1)  # Algorithm
 
 
 def print_sum_from_one_to_x(sum_all):  # Packed function with print()
