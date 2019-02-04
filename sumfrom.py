@@ -27,7 +27,7 @@ def _(string, lang=LANG):  # i18n
 
 def sum_from_one_to_x(sum_all):
     """
-    Fuck it.
+    Hug it.
     """
     if not isinstance(sum_all, int):  # Type check
         raise TypeError(_('You need to input an integer'))
