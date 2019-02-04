@@ -1,4 +1,7 @@
 # coding: utf-8
+"""
+Main module.
+"""
 
 import locale
 
@@ -17,17 +20,16 @@ LANG = locale.getdefaultlocale()[0]
 
 
 def _(string, lang=LANG):  # i18n
-    if lang == 'en_US' or lang == 'en_UK':
+    if lang in ('en_US', 'en_UK'):
         return string
-    else:
-        return LANGLIB[lang][string]
+    return LANGLIB[lang][string]
 
 
 def sum_from_one_to_x(sum_all):
-    __doc__ = """                                                                          
+    """
     Fuck it.
-    """                                                                                    # Easy-to-read doc
-    if type(sum_all) != type(1):  # Type check
+    """
+    if not isinstance(sum_all, int):  # Type check
         raise TypeError(_('You need to input an integer'))
     if sum_all <= 0:  # Number check
         raise NotImplementedError(
@@ -36,6 +38,9 @@ def sum_from_one_to_x(sum_all):
 
 
 def print_sum_from_one_to_x(sum_all):  # Packed function with print()
+    """
+    Wrapped with a print().
+    """
     try:
         print(sum_from_one_to_x(sum_all))
     except IOError:  # stdout check

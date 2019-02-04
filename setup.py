@@ -1,3 +1,8 @@
+"""
+ This is a simple project which has an aim of illustrating how can a package be
+   freakingly overwrapped.
+"""
+
 from distutils.core import setup
 
 setup(name='sumfrom',
