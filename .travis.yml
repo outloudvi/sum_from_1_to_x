@@ -5,6 +5,7 @@ python:
 install:
   - pip install pylint
 script:
+  - python -c 'import sys; print(sys.path)'
   - python tests/test_sum.py
 after_success:
   - pylint sum.py
