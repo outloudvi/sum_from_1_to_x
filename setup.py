@@ -6,7 +6,7 @@
 from distutils.core import setup
 
 setup(name='sumfrom',
-      version='1.0',
+      version='1.1',
       description='Sum helper',
       author='Outvi V',
       author_email='git@outv.im',
