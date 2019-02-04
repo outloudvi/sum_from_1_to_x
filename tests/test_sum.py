@@ -1,5 +1,5 @@
 import unittest
-from sum import sum_from_one_to_x
+from sumfrom import sum_from_one_to_x
 
 
 class sum_test(unittest.TestCase):  # Testcases

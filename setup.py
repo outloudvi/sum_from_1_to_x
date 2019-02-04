@@ -1,0 +1,10 @@
+from distutils.core import setup
+
+setup(name='sumfrom',
+      version='1.0',
+      description='Sum helper',
+      author='Outvi V',
+      author_email='git@outv.im',
+      url='https://github.com/outloudvi/sum_from_1_to_x',
+      py_modules=['sumfrom'],
+     )
